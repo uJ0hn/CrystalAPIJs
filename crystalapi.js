@@ -1,6 +1,7 @@
 import Users from "./interfaces/user.js"
 import Server from "./interfaces/server.js"
 import Node from "./interfaces/node.js"
+import CreateUser from "./values/createUser.js";
 class CrystalAPI {
 
     url
@@ -49,6 +50,10 @@ class CrystalAPI {
         }
     }
 
+
+    createUser() {
+        return new CreateUser(this)
+    }
 
     async getNode(nodeid) {
         const headers = new Headers()

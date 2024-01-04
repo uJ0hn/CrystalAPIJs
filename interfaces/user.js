@@ -1,4 +1,5 @@
 import CreateServer from "../values/createServer.js";
+import ChangePass from "../values/changePass.js";
 
 class User {
 
@@ -13,7 +14,9 @@ class User {
         return this.json.name
     }
 
-
+    changePass() {
+        return new ChangePass(this, this.api)
+    }
     createServer() {
         return new CreateServer(this, this.api)
     }
