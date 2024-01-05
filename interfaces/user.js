@@ -1,6 +1,6 @@
-import CreateServer from "../values/createServer.js";
-import ChangePass from "../values/changePass.js";
 
+const CreateServer = require("../values/createServer.js")
+const ChangePass = require("../values/changePass.js")
 class User {
 
     json
@@ -45,4 +45,4 @@ class User {
 
 }
 
-export default User
+module.exports = User

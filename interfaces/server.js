@@ -41,6 +41,26 @@ class Server {
     }
 
 
+    async sendAction(action) {
+        const headers = new Headers()
+        headers.append("Authorization", `Bearer ${this.api.token}`)
+        headers.append("action", "sendaction")
+        headers.append("id", this.getId())
+        headers.append("action1", action)
+        const response = fetch(this.api.url, {
+            headers: headers,
+            method: "GET"
+        })
+
+        const result = await (await response).text()
+        const json = JSON.parse(result)
+        if(json.error !== "success") {
+            throw new Error(json.error)
+        } else {
+            return "success"
+        }
+    }
+
 
 }
-export default Server
+module.exports = Server

@@ -1,7 +1,7 @@
-import Users from "./interfaces/user.js"
-import Server from "./interfaces/server.js"
-import Node from "./interfaces/node.js"
-import CreateUser from "./values/createUser.js";
+const Users = require("./interfaces/user.js")
+const Server = require("./interfaces/server.js")
+const Node = require("./interfaces/node.js")
+const CreateUser = require("./values/createUser.js")
 class CrystalAPI {
 
     url
@@ -95,4 +95,4 @@ class CrystalAPI {
 
 }
 
-export default CrystalAPI
+module.exports = CrystalAPI

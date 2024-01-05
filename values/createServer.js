@@ -1,5 +1,5 @@
-import Node from "../interfaces/node.js";
-import User from "../interfaces/user.js";
+const User = require("../interfaces/user.js")
+const Node = require("../interfaces/node.js")
 
 class CreateServer {
 
@@ -67,4 +67,4 @@ class CreateServer {
 
 
 }
-export default CreateServer
+module.exports = CreateServer

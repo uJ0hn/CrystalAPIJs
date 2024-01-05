@@ -53,4 +53,4 @@ class CreateUser {
 
 
 }
-export default CreateUser
+module.exports = CreateUser

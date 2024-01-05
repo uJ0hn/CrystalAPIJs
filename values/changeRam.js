@@ -1,4 +1,4 @@
 class ChangeRam {
 
 }
-export default ChangeRam
+module.exports = ChangeRam

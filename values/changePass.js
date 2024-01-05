@@ -1,4 +1,4 @@
-import User from "../interfaces/user.js";
+const User = require("../interfaces/user.js")
 
 class ChangePass {
 
@@ -45,4 +45,4 @@ class ChangePass {
 
 
 }
-export default ChangePass
+module.exports = ChangePass
